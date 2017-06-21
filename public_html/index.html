@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        
+        <style>
+            .container{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .menu{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                border-bottom: 2px #66ffcc solid;
+                width: 100%;
+            }
+            .centro{
+                text-align: center;
+                display: block;
+                border: none;
+                width: 100%;
+            }
+            .menu2{
+                font-size: 13pt;
+                padding: 10px;
+                border-top: 1px silver solid;
+                border-bottom: 1px silver solid;
+                color: gray;
+                font-weight: bold;
+                display: inline-block;
+                margin-right: 0;
+            }
+            .borde{
+                border-right: 1px silver solid;
+                border-right-width: 0.5px;
+            }
+            .mag_izq{
+                text-align: left;
+            }
+            .cuadro{
+                display: inline-block;
+                vertical-align: top;
+                padding-right: 30px;
+            }
+            .formulario{
+                padding: 20px;
+                width: 85%;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+                <div class="row menu">
+                    <div class="col-md-12">
+                        <a class="pull-right btn-link btn" href="">MI PEDIDO</a>
+                        <a class="pull-right btn-link btn" href="">MI CUENTA</a>
+                        <a class="pull-right btn-link btn" href="">CONDICIONES DE COMPRA</a>
+                        <a class="pull-right btn-link btn" href="">SOBRE MÍ</a>
+                        <a class="pull-right btn-link btn" href="">PREGUNTAS FRECUENTES</a>
+                        <a class="" href=""><img src="img/fb.png"></a>
+                        <a class="" href=""><img src="img/pr.png"></a>
+                        <a class="" href=""><img src="img/ig.png"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"><br><br></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        DESPACHO <span style="color:pink">GRATIS</span> POR COMPRAS DESDE $50.000
+                    </div>
+                </div>
+                <div class="centro">
+                    <div class="row">
+                        <img src="img/logo.png" alt="Logo Principal" height="256" width="256">
+                    </div>
+                    <div class="row menu2">
+                        <a class="btn-link btn borde" href="">aros</a>
+                        <a class="btn-link btn borde" href="">collares</a>
+                        <a class="btn-link btn borde" href="">pulseras</a>
+                        <a class="btn-link btn borde" href="">pandoras</a>
+                        <a class="btn-link btn borde" href="">accesorios</a>
+                        <a class="btn-link btn borde" href="">para el pelo</a>
+                        <a class="btn-link btn" href="">fieltro</a>
+                    </div>
+                </div>
+                <div class="formulario">
+                    <form action="registro.php" method="POST">
+                        <div class="mag_izq">
+                        <p>Regístrate en Tendrás Estrellas para realizar tus pedidos</p>
+                            <div class="cuadro">
+                                <div class="row">
+                                    <label for="rut">Rut </label><br>
+                                    <input placeholder="12345678-9" name="rut" id="rut" type="text">                
+                                </div>
+                                <div class="row">
+                                    <label for="usuario">Email <span style="color:red">*</span></label><br>
+                                    <input placeholder="correo@correo.com" name="usuario" id="usuario" type="text">
+                                </div>
+                                <div class="row">
+                                    <label for="nombre">Nombre <span style="color:red">*</span></label><br>
+                                    <input placeholder="Nombre Apellido" name="nombre" id="nombre" type="text">
+                                </div>
+                                <div class="row">
+                                    <label for="clave">Clave <span style="color:red">*</span></label><br>
+                                    <input name="clave" id="clave" type="password">
+                                </div>
+                                <div class="row">
+                                    <label for="repite_clave">Repite Clave <span style="color:red">*</span></label><br>
+                                    <input name="repite_clave" id="repite_clave" type="password">
+                                </div>
+                            </div>
+                            <div class="cuadro">
+                                <div class="row">
+                                    <label for="direccion">Dirección <span style="color:red">*</span></label><br>
+                                    <input placeholder="Calle N° Población/Villa" name="direccion" id="direccion" type="text">
+                                </div>
+                                <div class="row">
+                                    <label for="id_region">Región <span style="color:red">*</span></label><br>
+                                    <select id="id_region" name="region">
+                                        <option value="">Seleccione una Región</option>
+                                        <option value="Los Lagos">X - Los Lagos</option>
+                                        <option value="Los Rios">XIV - Los Ríos</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <label for="id_comuna">Comuna <span style="color:red">*</span></label><br>
+                                    <select id="id_comuna" name="comuna">
+                                        <option value="">Seleccione una Comuna</option>
+                                        <option value=""></option>
+                                        <option value="">---Región de Los Lagos---</option>
+                                        <option value=""></option>
+                                        <option value="Osorno">Osorno</option>
+                                        <option value=""></option>
+                                        <option value="">---Región de Los Ríos---</option>
+                                        <option value=""></option>
+                                        <option value="Valdivia">Valdivia</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input type="submit" value="Regístrate" class="btn btn-default"/>
+                        </div>
+                    </form>
+                </div>
+    </body>
+</html>
