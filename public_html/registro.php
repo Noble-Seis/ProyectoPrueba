@@ -1,5 +1,5 @@
 <?php
-
+//mundo misterioso//
 $rut = "";
 $usuario = "";
 $nombre = "";
